@@ -32,10 +32,21 @@ body {
   width: 15em;
   height: 15em;
   object-fit: cover;
+  object-position: center;
 }
 
 .slide[data-active] {
   opacity: 1;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  top: 2%;
+  transform: translateY(-50%);
 }
 
 img {
