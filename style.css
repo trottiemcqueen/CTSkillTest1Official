@@ -1,17 +1,41 @@
-/*
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-* {
+/** {
   margin: 0;
   padding: 0;
 }
+*/
 
 body {
-  line-height: 1.5;
+  margin: 0;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide > img {
+  display: block;
+  width: 15em;
+  height: 15em;
+  object-fit: cover;
+}
+
+.slide[data-active] {
+  opacity: 1;
 }
 
 img {
@@ -20,7 +44,7 @@ img {
 
 
 
-img,
+/*img,
 picture,
 video,
 canvas,
@@ -37,5 +61,4 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-}
-*/
+}*/
