@@ -40,6 +40,8 @@
   height: 100vh;
   z-index: 2;
   position: absolute;
+  top: 122rem;
+  margin-left: 2rem;
 }
 
 .carousel > ul {
