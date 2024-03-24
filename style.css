@@ -11,7 +11,13 @@
 }
 */
 
-
+.links a{
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style: none;
+}
 
 .background > img {
   object-fit: cover;
@@ -28,6 +34,17 @@
   width: 100vw;
 }
 
+.background0 {
+  position: relative;
+}
+
+.background0 h1 {
+  position: absolute;
+  top: 22%;
+  font-size: 70px;
+  margin-left: 30%;
+}
+
 .background0 > img {
   object-fit: cover;
   object-position: center;
@@ -35,27 +52,65 @@
   width: 100vw;
 }
 
+/*History 01 Carousel*/
+.history01 {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+}
+
+h3 {
+  position: absolute;
+  padding-left: 6rem;
+  padding-top: 50px;
+  color: lightblue;
+}
+
+h1 a {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 5rem;
+}
+
+p {
+  position: absolute;
+  padding-left: 4rem;
+  padding-top: 110px;
+  color: white;
+}
+
 .carousel {
   width: 100vw;
   height: 100vh;
   z-index: 2;
   position: absolute;
+  display: inline-block;
   top: 122rem;
   margin-left: 2rem;
+  
+}
+
+.carousel .slide img {
+  display: inline-block;
 }
 
 .carousel > ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-block;
 }
 
 .slide {
-  position: absolute;
+  
   inset: 0;
   opacity: 0;
-  transition: 200ms opacity ease-in-out;
+  transition: 2000ms opacity ease-in-out;
   transition-delay: 200ms;
+  display: inline-block;
   
 }
 
@@ -65,13 +120,14 @@
   height: 15em;
   object-fit: cover;
   object-position: center;
+  display: inline-block;
   
 }
 
 .slide[data-active] {
   opacity: 1;
   z-index: 2;
-  transition-delay: 0ms;
+  transition-delay: 200ms;
 
 }
 
