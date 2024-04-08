@@ -11,12 +11,13 @@
 }
 */
 
-.links a{
+.links li{
   display: inline-block;
   display: flex;
   flex-direction: row;
   justify-content: end;
   list-style: none;
+  position: relative;
 }
 
 .background > img {
@@ -83,54 +84,52 @@ p {
 }
 
 .carousel {
+  margin: 0;
+  padding: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
   position: absolute;
   display: inline-block;
-  top: 122rem;
-  margin-left: 2rem;
-  
+  bottom: -17rem;
+
+
 }
 
-.carousel .slide img {
+.carousel img {
   display: inline-block;
+  right: 5rem;
 }
 
-.carousel > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block;
-}
-
+/*
 .slide {
-  
+
   inset: 0;
   opacity: 0;
   transition: 2000ms opacity ease-in-out;
   transition-delay: 200ms;
   display: inline-block;
-  
-}
 
-.slide > img {
+}
+*/
+
+img {
   display: block;
   width: 15em;
   height: 15em;
   object-fit: cover;
   object-position: center;
   display: inline-block;
-  
-}
 
+}
+/*
 .slide[data-active] {
   opacity: 1;
   z-index: 2;
   transition-delay: 200ms;
 
 }
-
+*/
 .carousel-button {
   position: absolute;
   z-index: 3;
