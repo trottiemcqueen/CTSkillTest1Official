@@ -11,13 +11,19 @@
 }
 */
 
+
 .links li{
   display: inline-block;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
   list-style: none;
-  position: relative;
+  position: absolute;
+  z-index: 2;
+}
+
+/*Logo*/
+.links .logo{
+  z-index: 4;
+  height: 50px;
+  width: 50px;
 }
 
 .background > img {
