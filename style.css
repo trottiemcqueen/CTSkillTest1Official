@@ -198,27 +198,35 @@ img {
 
 /*Calendar style*/
 
-.calendar {
+.container {
+  position: absolute;
+}
+
+.container .calendar {
   font-weight: bold;
   color: black;
-  width: 100%;
-
+  width: 50%;
+  position: relative;
+  margin-top: -30rem;
+  margin-left: 25rem;
 }
+
 
 .month {
   text-align: center;
   background: whitesmoke;
-  font-size: 80px;
+  font-size: 4rem;
   letter-spacing: 1px;
   color: black;
   border: 2px solid red;
+  z-index: 4;
 }
 
 table, th, td {
   width: 100%;
   table-layout: fixed;
   text-align: center;
-  font-size: 27px;
+  font-size: 2rem;
   border-collapse: collapse;
   border: 5px solid black;
 
@@ -226,6 +234,10 @@ table, th, td {
 
 tr, th, td {
   padding: 15px;
+}
+
+th {
+  font-size: .75rem;
 }
 
 
