@@ -255,6 +255,9 @@ th {
   font-size: .75rem;
 }
 
+.carousel:hover{
+  border: 1px solid hsl(0, 0%, 20%);
+}
 
 
 /*img,
